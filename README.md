@@ -9,5 +9,5 @@ A CLI script that can:
 3. Calculate the Shannon entropy of those bytes.
 
 ## Tech Stack
-* Language: C++ / Python
+* Language: C++ / Python / Bash
 * Environment: Linux (WSL)
