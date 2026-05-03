@@ -11,7 +11,7 @@ if len(sys.argv) < 2:
 
 target_file = sys.argv[1]
 file_size = os.path.getsize(target_file)
-chunk_size = 32
+chunk_size = 4096
 
 # READING BIN FILE - CONVERTING TO HEXADECIMAL
 def read_file(target_file, file_size):
@@ -36,7 +36,7 @@ def shannons_formula(f_bytes):
 
     # printing all bytes + counter   
     print("Do you want to see all bytes?: Y/N")
-    input1 = input()
+    input1 = input().upper()
     if input1 == "Y":
         for x in range(256):
             if hex_array[x] > 0:
@@ -63,4 +63,4 @@ def shannons_formula(f_bytes):
 if __name__ == "__main__":
     file_data = read_file(target_file=target_file, file_size=file_size)
     score  = shannons_formula(file_data)
-    print(f"SCORE: {score}")
+    print(f"SCORE: {score:.1f}")
