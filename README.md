@@ -11,3 +11,16 @@ A CLI script that can:
 ## Tech Stack
 * Language: C++ / Python / Bash
 * Environment: Linux (WSL)
+
+<hr>
+
+# Core Concepts
+
+## Anatomy of Firmware
+Firmware files are (or even blobs of firmware) are essentially mini Linux-based operating systems that are packed into a single binary file.
+
+ * This tool examins binary and blocks of hexadecimal data in order to hunt for Magic Numbers (file signatures).
+ * File Signatures (or Magic Numbers) are specific sequences of bytes that identify file types.
+
+## Embedded File Systems and Extraction
+Firmware contains specialised 
