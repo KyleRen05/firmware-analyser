@@ -27,8 +27,10 @@ Firmware contains specialised and highly compressed Linux file systems. Theoreti
 ## 3. Entropy Analysis
 <h3>Shannon Entropy</h3>
 Shannon entropy is a mathematical calculation that measures the randomness of data.<br/>
+
 * Low Entropy -> Very structured and predictable data
 * High Entropy -> Compressed or encrypted data<br/>
+
 This tool uses entropy to map out the binary and highlight which parts are compressed or encrypted and which parts are readable.
 
 ## 4. Static Analysis and String Extraction
