@@ -23,4 +23,11 @@ Firmware files are (or even blobs of firmware) are essentially mini Linux-based 
  * File Signatures (or Magic Numbers) are specific sequences of bytes that identify file types.
 
 ## Embedded File Systems and Extraction
-Firmware contains specialised 
+Firmware contains specialised and highly compressed Linux file systems. Theoretically, this tool will find the offset, or exact memory address of the file system, determine the size, and unpack it. Unpacking the file system will give a more clear directory structure.
+
+## Entropy Analysis
+<h3>Shannon Entropy</h3>
+Shannon entropy is a mathematical calculation that measures the randomness of data.
+ * Low Entropy -> Very structured and predictable data
+ * High Entropy -> Compressed or encrypted data
+This tool uses entropy to map out the binary and highlight which parts are compressed or encrypted and which parts are readable.
