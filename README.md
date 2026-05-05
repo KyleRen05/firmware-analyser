@@ -12,7 +12,7 @@ A CLI script that can:
 * Language: C++ / Python / Bash
 * Environment: Linux (WSL)
 
-<hr>
+<hr/>
 
 # Core Concepts
 
@@ -26,16 +26,17 @@ Firmware contains specialised and highly compressed Linux file systems. Theoreti
 
 ## 3. Entropy Analysis
 <h3>Shannon Entropy</h3>
-Shannon entropy is a mathematical calculation that measures the randomness of data.</br>
+Shannon entropy is a mathematical calculation that measures the randomness of data.<br/>
 * Low Entropy -> Very structured and predictable data
-* High Entropy -> Compressed or encrypted data</br>
+* High Entropy -> Compressed or encrypted data<br/>
 This tool uses entropy to map out the binary and highlight which parts are compressed or encrypted and which parts are readable.
 
 ## 4. Static Analysis and String Extraction
 Even in compiled C/C++ binaries, readable ASCII or Unicode text often survives the compilation process. The theory here relies on Pattern Matching (often using Regular Expressions). This tool will scan the raw binary structures for strings of text that match the patterns of private cryptographic keys, hardcoded admin passwords, developer comments, or exposed API tokens.
 
 ## 5. Architecture and Endianness
-Hardware varies immensely in IoT. Different processors read binary differently (this concept is known as Endianness).</br>
+Hardware varies immensely in IoT. Different processors read binary differently (this concept is known as Endianness).<br/>
 * "Big-Endian" processors read the most significant byte first
-* "Little-Endian" processors read the least significant byte first</br>
+* "Little-Endian" processors read the least significant byte first<br/>
+
 This tool will understand how the target hardware reads the data so that it does not read the memory structures backwards.
